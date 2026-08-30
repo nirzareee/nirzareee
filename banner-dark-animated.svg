@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Nirzaree — a computer keyboard turning into piano keys, with coffee spilled across it">
+  <defs>
+    <clipPath id="board"><rect x="0" y="182" width="1200" height="158"/></clipPath>
+  </defs>
+
+    <style>
+      .pour  { transform-box: fill-box; transform-origin: top center;
+               animation: pourIn .65s ease-out both; }
+      .splash{ animation: fade .5s ease-out .5s both; }
+      .pool  { transform-box: fill-box; transform-origin: left center;
+               animation: spread 1.15s cubic-bezier(.22,.61,.36,1) .45s both; }
+      .drip  { transform-box: fill-box; transform-origin: top center;
+               animation: run 1s ease-in both; }
+      .d1 { animation-delay: 1.15s } .d2 { animation-delay: 1.35s }
+      .d3 { animation-delay: 1.55s } .d4 { animation-delay: 1.75s }
+      .dots  { animation: fade .6s ease-out 1.8s both; }
+      @keyframes pourIn { from { transform: scaleY(0) } to { transform: scaleY(1) } }
+      @keyframes spread { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+      @keyframes run    { from { transform: scaleY(0) } to { transform: scaleY(1) } }
+      @keyframes fade   { from { opacity: 0 } to { opacity: 1 } }
+      @media (prefers-reduced-motion: reduce) {
+        .pour,.splash,.pool,.drip,.dots { animation: none }
+      }
+    </style>
+
+  <rect width="1200" height="340" fill="#12100E"/>
+  <rect width="1200" height="3" fill="#C98B5E"/>
+
+  <!-- wordmark -->
+  <rect x="72" y="58" width="2" height="96" fill="#C98B5E"/>
+  <text x="104" y="102" font-family="Georgia, 'Times New Roman', serif" font-size="50" fill="#F0E8DE">Nirzaree</text>
+  <text x="106" y="132" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#A2968A">M.S. Data Science, Stony Brook University</text>
+  <text x="106" y="158" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#C98B5E" letter-spacing="3.4">SWE   &#183;   ML   &#183;   SECURITY</text>
+
+  <g clip-path="url(#board)">
+
+    <!-- keycaps -->
+    <g fill="#FFFDFA" stroke="#D5C7B6" stroke-width="1.5">
+      <rect x="40"  y="208" width="44" height="44" rx="6"/>
+      <rect x="90"  y="208" width="44" height="44" rx="6"/>
+      <rect x="140" y="208" width="44" height="44" rx="6"/>
+      <rect x="190" y="208" width="44" height="44" rx="6"/>
+      <rect x="240" y="208" width="44" height="44" rx="6"/>
+      <rect x="290" y="208" width="44" height="44" rx="6"/>
+      <rect x="56"  y="258" width="44" height="44" rx="6"/>
+      <rect x="106" y="258" width="44" height="44" rx="6"/>
+      <rect x="156" y="258" width="44" height="44" rx="6"/>
+      <rect x="206" y="258" width="44" height="44" rx="6"/>
+      <rect x="256" y="258" width="70" height="44" rx="6"/>
+    </g>
+
+    <!-- keycaps stretching into keys -->
+    <g fill="#FFFDFA" stroke="#D5C7B6" stroke-width="1.5">
+      <rect x="356" y="206" width="40" height="72"  rx="5"/>
+      <rect x="401" y="199" width="38" height="106" rx="4"/>
+      <rect x="444" y="192" width="36" height="134" rx="3"/>
+    </g>
+
+    <!-- white keys -->
+    <g fill="#FFFFFF" stroke="#D5C7B6" stroke-width="1.5">
+      <rect x="484"  y="186" width="34" height="162"/><rect x="520"  y="186" width="34" height="162"/>
+      <rect x="556"  y="186" width="34" height="162"/><rect x="592"  y="186" width="34" height="162"/>
+      <rect x="628"  y="186" width="34" height="162"/><rect x="664"  y="186" width="34" height="162"/>
+      <rect x="700"  y="186" width="34" height="162"/><rect x="736"  y="186" width="34" height="162"/>
+      <rect x="772"  y="186" width="34" height="162"/><rect x="808"  y="186" width="34" height="162"/>
+      <rect x="844"  y="186" width="34" height="162"/><rect x="880"  y="186" width="34" height="162"/>
+      <rect x="916"  y="186" width="34" height="162"/><rect x="952"  y="186" width="34" height="162"/>
+      <rect x="988"  y="186" width="34" height="162"/><rect x="1024" y="186" width="34" height="162"/>
+      <rect x="1060" y="186" width="34" height="162"/><rect x="1096" y="186" width="34" height="162"/>
+      <rect x="1132" y="186" width="34" height="162"/><rect x="1168" y="186" width="34" height="162"/>
+    </g>
+
+    <!-- black keys -->
+    <g fill="#2E2620">
+      <rect x="509"  y="186" width="19" height="94"/><rect x="545"  y="186" width="19" height="94"/>
+      <rect x="617"  y="186" width="19" height="94"/><rect x="653"  y="186" width="19" height="94"/>
+      <rect x="689"  y="186" width="19" height="94"/><rect x="761"  y="186" width="19" height="94"/>
+      <rect x="797"  y="186" width="19" height="94"/><rect x="869"  y="186" width="19" height="94"/>
+      <rect x="905"  y="186" width="19" height="94"/><rect x="941"  y="186" width="19" height="94"/>
+      <rect x="1013" y="186" width="19" height="94"/><rect x="1049" y="186" width="19" height="94"/>
+      <rect x="1121" y="186" width="19" height="94"/><rect x="1157" y="186" width="19" height="94"/>
+    </g>
+
+    <!-- coffee: pooled across the top of the keys, running down -->
+    <g fill="#A6653C" opacity="0.6">
+      <path class="pool" d="M884 182 H1200 V226
+               C 1172 241 1148 217 1120 233
+               C 1092 249 1066 223 1036 241
+               C 1006 259 980 231 950 251
+               C 924 268 902 242 888 218
+               C 881 205 880 190 884 182 Z"/>
+      <path class="drip d1" d="M944 250 h24 v54 a12 12 0 0 1 -24 0 Z"/>
+      <path class="drip d2" d="M1030 240 h17 v78 a8.5 8.5 0 0 1 -17 0 Z"/>
+      <path class="drip d3" d="M1114 232 h22 v116 h-22 Z"/>
+      <path class="drip d4" d="M1180 226 h15 v46 a7.5 7.5 0 0 1 -15 0 Z"/>
+      <g class="dots">
+      <circle cx="990" cy="284" r="6"/>
+      <circle cx="1076" cy="268" r="4.5"/>
+      <circle cx="912" cy="258" r="5"/>
+      <circle cx="866" cy="212" r="4"/>
+      <circle cx="852" cy="232" r="2.6"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- tipped mug -->
+  <g transform="translate(860,52) rotate(140, 40, 34)">
+    <path d="M4 2 H76 L67 56 A17 17 0 0 1 50 70 H30 A17 17 0 0 1 13 56 Z"
+          fill="#FFFDFA" stroke="#2E2620" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M76 14 a16 16 0 0 1 0 32" fill="none" stroke="#E8DED2" stroke-width="2.6"/>
+    <ellipse cx="40" cy="2" rx="36" ry="8" fill="#FFFDFA" stroke="#2E2620" stroke-width="2.6"/>
+    <ellipse cx="40" cy="2" rx="29" ry="5.5" fill="#A6653C" opacity="0.5"/>
+  </g>
+
+  <!-- the pour -->
+  <path class="pour" d="M913 110 C 905 138 899 164 897 186 L 950 186 C 948 162 936 136 928 110 Z"
+        fill="#A6653C" opacity="0.6"/>
+  <ellipse class="splash" cx="923" cy="188" rx="34" ry="8" fill="#A6653C" opacity="0.45"/>
+</svg>
